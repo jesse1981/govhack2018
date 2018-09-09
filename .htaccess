@@ -1,0 +1,16 @@
+
+RewriteEngine On
+
+RewriteBase /
+
+RewriteRule ^js - [L,NC]
+RewriteRule ^images - [L,NC]
+RewriteRule ^css - [L,NC]
+RewriteRule ^bundles - [L,NC]
+RewriteRule ^favicon - [L,NC]
+ReWriteRule ^.well-known - [L,NC]
+
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/(.*)$ index.php?module=$1&action=$2&id=$3&format=$4 [QSA,L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/(.*)$ index.php?module=$1&action=$2&id=$3 [QSA,L]
+RewriteRule ^([a-zA-Z0-9_-]+)/(.*)$ index.php?module=$1&action=$2 [QSA,L]
+RewriteRule ^(.*)$ index.php?module=$1 [QSA,L]

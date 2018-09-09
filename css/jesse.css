@@ -1,0 +1,124 @@
+body {
+  width: 100%;
+}
+#search {
+  width: 50%;
+}
+.content {
+  width: 950px;
+  margin: 0 auto;
+}
+.header .content {
+  background-repeat: no-repeat;
+  background-image: url('https://search.data.gov.au/api/v0/content/logo.bin');
+  height: 100px;
+}
+.search-form {
+  text-align: center;
+  margin: 20px 0;
+}
+.ais-search-box--magnifier-wrapper, .ais-search-box--reset-wrapper {
+  display: none !important;
+}
+.hit-image {
+  width: 65px;
+}
+.hit-image img {
+    height: 65px;
+}
+.hit {
+    float: left;
+    clear: left;
+    border-top: dashed 1px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+.hit:hover {
+    background: #efefef;
+}
+.hit-image, .hit-content {
+    float: left;
+    text-align: left;
+    height: 60px;
+    overflow: hidden;
+}
+.hit-content {
+    margin-left: 10px;
+    width: 150px;
+}
+.hit-content span {
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 173px;
+    overflow: hidden;
+}
+.ais-hits--item.active .hit {
+    background: #A0FF3C !important;
+}
+div#single-result {
+    margin-left: 10px;
+    overflow: auto;
+    width: 70%;
+    display: block;
+    margin-top: 0px;
+    position: relative;
+    left: 20px;
+    top: -20px;
+}
+#single-result h3 {
+    width: 92%;
+}
+.XLS, .XLSX {
+  background-image: url('https://icon2.kisspng.com/20180326/xqe/kisspng-microsoft-excel-microsoft-office-microsoft-word-mi-excel-5ab876b0cb55f4.3336759915220384488329.jpg');
+}
+.CSV {
+  background-image: url('https://cdn2.iconfinder.com/data/icons/file-formats-4-1/100/file_formats_4_csv-512.png');
+}
+.REST {
+  background-image: url('https://eatngage.com/wp-content/uploads/2018/02/API-Icon.png');
+}
+.ZIP {
+  background-image: url('https://images.all-free-download.com/images/graphiclarge/zip_37047.jpg');
+}
+.PDF {
+  background-image: url('http://iconbug.com/data/5b/507/52ff0e80b07d28b590bbc4b30befde52.png');
+}
+.CSV, .XLS, .PDF, .REST, .ZIP {
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+}
+.dists {
+    margin-top: 20px;
+}
+.dist-item {
+    float: left;
+    clear: left;
+}
+.dist-item div {
+    float: left;
+}
+.dist-item .dist-title {
+    width: 75%;
+}
+.dist-item .dist-modified {
+    width: 15%;
+}
+.modified {
+    clear: left;
+    /* float: right !important; */
+    /* width: 28%; */
+}
+.catalog {
+    background-image: url(https://static.thenounproject.com/png/627708-200.png);
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    cursor: pointer;
+}
